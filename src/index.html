@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Sofa</title>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/logo.jpeg.webp" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Loading -->
+    <div id="loading" class="position-fixed bg-white d-flex align-items-center justify-content-center" style="top: 0;bottom: 0;right: 0;left: 0;z-index:101;">
+      <img src="images/logo.jpeg.webp" alt="" style="width: 200px;">
+    </div>
+    <!-- Loading -->
+
+    <!-- Btn WhatsApp -->
+    <a id="whatsapp"
+    href="https://wa.me/6282110478205?text=Admin%20King%20Sofa"
+    class="bg-success d-block position-fixed text-light rounded-pill py-2 px-3 d-flex d-lg-none align-items-center shadow whatsapp-hide"
+    style="z-index: 30;bottom: 10px;right: 10px;font-size: 14px;font-weight: 500;">
+      <img src="images/whatsapp.svg" class="mr-2" style="width: 13px;">
+      Hai, ada yang bisa kami bantu?
+    </a>
+    <!-- Btn WhatsApp -->
+
+    <!-- Zoom Image -->
+    <div id="zoom_bg" class="zoomHide" >
+      <span id="zoom_close">X</span>
+      <div id="zoom_img_wraper">
+          <img id="zoom_img" src="" alt="">
+      </div>
+    </div>
+    <!-- Zoom Image -->
+
+    <!-- Navbar Start -->
+    <div class="fixed-top bg-white" style="z-index: 99;">
+      <div id="alert_ig" class="alert alert-warning mb-0 h-0 d-flex justify-content-between align-items-center" role="alert">
+        <div class="pr-4">
+          Follow Instagram 
+          <a href="https://www.instagram.com/endangkingsofa_/?hl=id" style="text-decoration: none;color: #856404;">
+            <strong>@endangkingsofa_</strong>
+          </a> 
+          untuk mendapatkan informasi terbaru!
+        </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container align-items-center">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                  <img src="images/logo.jpeg.webp" alt="">
+                  <div class="brand_text ml-2 opacity-0">
+                      <span>king</span>
+                      <span>sofa</span>
+                  </div>
+              </a>
+  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item py-2">
+                    <a id="href-beranda" class="nav-link px-3" href="#beranda">Beranda</a>
+                  </li>
+                  <li class="nav-item py-2">
+                    <a id="href-jasa" class="nav-link px-3" href="#jasa">Jasa</a>
+                  </li>
+                  <li class="nav-item py-2">
+                    <a id="href-galery" class="nav-link px-3" href="#galery">Galery</a>
+                  </li>
+                  <li class="nav-item py-2">
+                    <a id="href-tentang_kami" class="nav-link px-3" href="#tentang_kami">Tentang Kami</a>
+                  </li>
+                </ul>
+  
+                <div class="navbar-buttons d-flex justify-content-center pb-3 pb-lg-0 pt-4 pt-lg-0">
+                    <a href="https://wa.me/6282110478205?text=Admin%20King%20Sofa"  class="btnHubungiKami btn px-4 py-2 bg-hover-youngblue-400">
+                      Hubungi Kami
+                    </a>
+                </div>
+              </div>
+  
+          </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Beranda Start -->
+    <section id="beranda" class="d-flex flex-column justify-content-center align-items-center py-5 position-relative">
+      <div class="container position-absolute bg-danger" style="top: 0; z-index: 8;">
+        <div id="sofa_1" class="position-absolute">
+          <img src="images/sofa_hijau.webp" class="w-100" alt="">
+        </div>
+        <div id="sofa_2" class="position-absolute">
+            <img src="images/sofa_coklat.webp" class="w-100" alt="">
+        </div>
+      </div>
+
+      <div class="container position-absolute" style="bottom: 0; z-index: 8;">
+        <div id="sofa_3" class="position-absolute">
+          <img src="images/sofa_putih_kotak.webp" class="w-100" alt="">
+        </div>
+        <div id="sofa_4" class="position-absolute">
+          <img src="images/sofa_putih_bulat.webp" class="w-100" alt="">
+        </div>
+      </div>
+
+      <div id="welcome_text" class="text-center" style="z-index: 8;">
+          <h1>Selamat Datang</h1>
+          <h1 class="mb-4">
+              Di
+              <span>King</span>
+              <span>Sofa</span>
+          </h1>
+      </div>
+      <div style="z-index: 8;">
+          <h2 id="typed_text" class="mt-4 text-center" style="z-index: 8;">
+              Spesialis <span id="typed"></span> Sofa di Kota Tangerang Selatan.
+              <br>
+              Sejak Tahun 2005
+          </h2>
+      </div>
+      <a id="bottom_arrow" href="#jasa" class="nav-link d-flex align-items-center justify-content-center position-absolute" style="z-index: 8;">
+          <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+    <!-- Beranda End -->
+
+    <!-- Jasa Start -->
+    <section id="jasa" class="py-5 position-relative" style="z-index: 9;">
+      <div class="container px-4 px-sm-0">
+        <!-- title -->
+        <div class="row">
+          <div class="col-md-8">
+            <h1 id="title" class="pb-3">
+              <span>jasa</span>
+              <span>kami</span>
+            </h1>
+            <p class="mt-3">
+              Komitmen kami memberikan pelayanan yang terbaik agar konsumen puas. Yang kami kerjakan di King Sofa adalah sebagai berikut :
+            </p>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="row mt-5 d-flex align-items-stretch">
+          <div class="col-6 col-md-3">
+            <div class="card py-4 h-100 bg-second-color text-main-color rounded-sm d-flex align-items-center justify-content-center shadow px-2">
+              <i class="fa-solid fa-pen-ruler mt-2"></i>
+              <h3 class="text-center mt-4 h6 text-capitalize" style="font-weight: 700;">
+                Pembuatan Sofa Baru
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card py-4 h-100 bg-second-color text-main-color rounded-sm d-flex align-items-center justify-content-center shadow px-2">
+              <i class="fa-solid fa-wand-magic-sparkles mt-2"></i>
+              <h3 class="text-center mt-4 h6 text-capitalize" style="font-weight: 700;">
+                Perubahan Model
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mt-4 mt-md-0">
+            <div class="card py-4 h-100 bg-second-color text-main-color rounded-sm d-flex align-items-center justify-content-center shadow px-2">
+              <i class="fas fa-wrench mt-2"></i>
+              <h3 class="text-center mt-4 h6 text-capitalize" style="font-weight: 700;">
+                Perbaikan Sofa
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mt-4 mt-md-0">
+            <div class="card py-4 h-100 bg-second-color text-main-color rounded-sm d-flex align-items-center justify-content-center shadow px-2">
+              <i class="fas fa-recycle mt-2"></i>
+              <h3 class="text-center mt-4 h6 text-capitalize" style="font-weight: 700;">
+                Ganti Kain Sofa
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Jasa End -->
+
+    <!-- Kelebihan Start -->
+    <section id="kelebihan" class="py-5 position-relative" style="z-index: 8;">
+      <div class="container px-4 px-sm-0 position-relative" style="z-index: 8;">
+        <div class="row">
+          <div class="col-12 col-md-6 pr-5 d-flex flex-column justify-content-center">
+            <h1 id="title" class="pb-3">
+              <span>Hidupkan</span>
+              <span>indahnya <br> ruangan</span>
+            </h1>
+            <p class="mt-3 pr-5">
+              Kenapa harus memilih jasa King Sofa? berikut alasan yang bisa kami berikan: 
+            </p>
+            <ul class="mt-3 pl-3">
+              <li class="mt-2">
+                <b>Berpengalaman</b> <br>
+                dikerjakan oleh tenaga/tukang yang profesional dan berpengalaman selama bertahun-tahun di bidang kursi sofa
+              </li>
+              <li class="mt-2">
+                <b>Tepat waktu</b> <br>
+                kami selalu berusaha mengerjakan semua permintaan customer kami dengan mengedepankan kualitas hasil serta ketepatan waktu
+              </li>
+              <li class="mt-2">
+                <b>Berkualitas</b> <br> 
+                kami mengerjakan berbagai order baik service sofa, pembuatan sofa baru, springbed, kursi dll. Dengan mengutamakan kerapihan serta kualitas hasil kerja kami demi kepuasan customer
+              </li>
+              <li class="mt-2">
+                <b>Konsultasi dan pengiriman Jakarta gratis</b> <br>  
+                pelayanan konsultasi dan pengiriman ke lokasi anda
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-none d-md-flex align-items-center justify-content-end">
+            <img src="images/ruangan.JPG.webp" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute bg" style="top: 0;bottom: 0;">
+      </div>
+    </section>
+    <!-- Kelebihan End -->
+
+    <!-- Galery Start -->
+    <section id="galery" class="py-5 position-relative" style="z-index: 8;">
+      <div class="container px-4 px-sm-0 pt-5">
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <h1 id="title" class="pb-3">
+              <span>Portfolio</span>
+              <span>Kami</span>
+
+              <div id="pembatas_bulat" class="position-relative mt-3 d-flex justify-content-center align-items-center">
+                <div id="circle" class="position-relative" style="z-index: 1;">
+                </div>
+                <div id="line" class="position-absolute d-flex">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div id="images_wraper" class="col-12">
+            <img src="images/rangka sofa.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 1.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 2.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/rangka sofa 2.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 3.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 4.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 5.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 6.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 7.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 8.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 9.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 10.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 11.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 12.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 13.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 14.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 15.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 16.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 17.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 18.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 19.jpeg.webp" alt="" onclick="imgOnClick(this)">
+            <img src="images/sofa 20.jpeg.webp" alt="" onclick="imgOnClick(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galery End -->
+
+    <!-- Tentang Kami Start -->
+    <section id="tentang_kami" class="position-relative" style="z-index: 9;background-image:url('images/ruangan.JPG.webp');background-repeat: no-repeat;background-size: cover;">
+      <div class="container px-4 px-sm-0 position-relative" style="z-index: 8;">
+        <div class="row py-5">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div id="tentang" class="subtitle col-12 col-md-10">
+                <h1 class="pl-3 py-1">Tentang Kami</h1>
+                <p class="mt-3 text-justify">sofa adalah kursi empuk. sofa digunakan untuk duduk dan beberapa orang menggunakannya untuk tidur di ruang tamu. sofa memiliki bantal kecil / besar. warnanya tidak satu, melainkan berbagai macam warna dan memiliki banyak desain. sofa juga memiliki banyak ukuran dari yang kecil sampai yang  besar.
+                apakah anda sedang berencana mengganti sofa lama anda? mungkin karena kotor, robek covernya, sudah tidak empuk atau bosan ingin merubah modelnya, dll. cobalah menggunakan layanan kami. kami bisa membuat sofa lama anda menjadi tampak seperti baru kembali dengan mengganti covernya, menambah busa, memperbaiki rangka yang patah, karet yang jebol dan lain sebagainya agar sofa tersebut tampak indah seperti baru saat berada diruangan anda.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-5 mt-md-0">
+            <div class="row">
+              <div id="kontak" class="subtitle col-12 col-md-10">
+                <h1 class="pl-3 py-1">Kontak</h1>
+                <a href="https://wa.me/6282110478205?text=Admin%20King%20Sofa" class="d-block mt-3">
+                  <i class="fa-brands fa-whatsapp mr-2"></i> 082110478205 (Erna)
+                </a>
+                <a href="https://wa.me/6281315022630?text=Admin%20King%20Sofa" class="d-block mt-3">
+                  <i class="fa-brands fa-whatsapp mr-2"></i> 081315022630 (Endang)
+                </a>
+                <a href="mailto:endangkingsofa@yahoo.com" class="d-block mt-3">
+                  <i class="fa-solid fa-envelope mr-2"></i> endangkingsofa@yahoo.com
+                </a>
+                <a href="https://www.instagram.com/endangkingsofa_/?hl=id" class="d-block mt-3">
+                  <i class="fa-brands fa-instagram mr-2"></i> @endangkingsofa_
+                </a>
+              </div>
+              <div id="lokasi" class="subtitle col-12 col-md-10 pt-5">
+                <h1 class="pl-3 py-1">Lokasi</h1>
+                <p class="d-block mt-3">
+                  <i class="fa-solid fa-location-dot mr-2"></i> Workshop 1: <br>
+                  <div class="pl-4">
+                    Jalan IV, East Lengkong Gudang, Serpong Sub-District, South Tangerang City, Banten 15310 <br>
+                    <a href="https://maps.app.goo.gl/xUoYov2WRNtBDvk1A">buka di Gmaps</a>
+                  </div> 
+                </p>
+                <p class="d-block mt-3">
+                  <i class="fa-solid fa-location-dot mr-2"></i> Workshop 2: <br> 
+                  <div class="pl-4">
+                    jl. H.sarjan rt02/03 no.58 lengkong gudang timur, kec. serpong. Kota Tangerang selatan <br>
+                    <a href="https://maps.app.goo.gl/xUoYov2WRNtBDvk1A">buka di Gmaps</a>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-white d-flex justify-content-center pb-4">
+            Copyright © 2022 &NonBreakingSpace;<b>King Sofa</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute bg-main-color" style="top: 0;bottom: 0;right: 0;left: 0;opacity: 0.9;">
+      </div>
+    </section>
+    <!-- Kelebihan End -->
+    
+    <!-- Js -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

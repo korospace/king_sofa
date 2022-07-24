@@ -1,0 +1,39 @@
+{
+  "name": "king_sofa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korospace/king_sofa.git"
+  },
+  "author": "korospace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korospace/king_sofa/issues"
+  },
+  "homepage": "https://github.com/korospace/king_sofa#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.45.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gsap": "^3.10.4",
+    "jquery": "^3.2.1",
+    "particle.js": "^1.0.7",
+    "popper.js": "^1.12.9",
+    "typed.js": "^2.0.12"
+  }
+}
